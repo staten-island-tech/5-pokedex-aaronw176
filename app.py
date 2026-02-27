@@ -14,12 +14,13 @@ for i in data:
     print(i['name'][language]) """
 
 # Develop a function that creates a new list of pokemon based on the type the user searched for. If no pokemon was found of that type inform the user
-types = input("Select a pokemon type ").lower()
+types = input("Select a pokemon type ")
 
 for i in data:
     for i['type'][0] in data:
-        if i['type'][0]:
-            print(i['name'])
+        if i['type'][0] == f"{types}":
+            print(data['name'])
+            break
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
 
 #For Leo/, help me come up with a clever final question, considering maybe showing all moves a pokemon has avaiable based on type
