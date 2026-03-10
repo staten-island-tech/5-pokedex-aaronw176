@@ -41,10 +41,26 @@ if values == 1:
 else: 
     print(f"There is no pokemon with the type {types}") """
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
-def name(pokemon):
+def name(pokemon, language):
+    z = 0
+    y = 0
+    poke = list(pokemon)
+    print(poke)
     for i in data:
-        for pokemon in i['name']["english"]:
-            print(pokemon)
-name("char")
+        z = i['id']
+        for x in poke:
+            if x == poke[y]:
+                 y += 1 
+                 for l in data:
+                    if z == l['id']:
+                        print(i['name'][language])
+            else:
+                    break
+            if IndexError:
+                break
+
+
+            
+name("bu" , "english")
 #For Leo/, help me come up with a clever final question, considering maybe showing all moves a pokemon has avaiable based on type
 
